@@ -13,10 +13,12 @@ import lombok.ToString;
 @Data 
 @AllArgsConstructor @NoArgsConstructor @ToString
 public class Product {
+	
     @Id
 	private String id;
 	private String nameProd;
 	private double price;
+	
 	@DBRef
 	private Category category;
 }
